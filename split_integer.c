@@ -16,7 +16,7 @@ int main ( void )
     int digit; //Digits
     
     // Read a integer
-    printf("Enter a integer: ");
+    printf("Enter a integer with five digits: \n");
     scanf("%d", &number);
     printf("The number entered was %d\n", number);
 
@@ -32,6 +32,8 @@ int main ( void )
     d5 = remaining % 10;
     remaining = (remaining - d5)/10;
 
-    printf("%d %d %d %d %d\n", d5, d4, d3, d2, d1);
+    // Write out
+    printf("\nSplited\n");
+    printf("%d-%d-%d-%d-%d\n", d5, d4, d3, d2, d1);
     
 }
