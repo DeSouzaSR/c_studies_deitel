@@ -29,7 +29,7 @@ int main ()
     d2 = (d2 + 7) % 10;
     d1 = (d1 + 7) % 10;
 
-    number_coded = d3 * 1000 + d4 * 100 + d1 * 10 + d2;
+    number_coded = d2 * 1000 + d1 * 100 + d4 * 10 + d3;
     
     printf("Coded number: %d", number_coded);
     

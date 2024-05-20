@@ -23,12 +23,14 @@ int main ()
 	d1 = number % 10;
 	number = number / 10;
 
-	d4 = (d2 - 7) % 10;
-	d2 = (d4 - 7) % 10;
-	d3 = (d1 - 7) % 10;
-	d1 = (d3 - 7) % 10;
+	d4 = (d4 - 7) % 10;
+	d3 = (d3 - 7) % 10;
+	d2 = (d2 - 7) % 10;
+	d1 = (d1 - 7) % 10;
 	
-	number_decoded = d1 * 1000 + d2 * 100 + d3 * 10 + d4;
+	printf("d1: %d:\n", d1);
+
+	number_decoded = d4 * 1000 + d3 * 100 + d2 * 10 + d1;
     
     printf("Coded number: %d", number_decoded);
     
